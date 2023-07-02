@@ -6,7 +6,7 @@
 # CloudCannon configuration specific to those collections.
 collections_config: 
   pages:
-    path: pages
+    path: content/pages
     url: /[slug]
     output: true
     parser: front-matter

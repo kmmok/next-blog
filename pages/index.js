@@ -3,16 +3,17 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Date from '../components/date';
+import { getCollectionItem } from '../lib/collections';
 
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, page }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Drink bottles</p>
+        <p>{page.title}</p>
         
       </section>
       <div>
@@ -40,9 +41,13 @@ import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
+  const page = await getCollectionItem('pages', 'index');
+
   return {
     props: {
       allPostsData,
+      page: JSON.parse(JSON.stringify(page))
+
     },
   };
 }
