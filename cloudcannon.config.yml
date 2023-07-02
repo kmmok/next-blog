@@ -7,13 +7,13 @@
 collections_config: 
   pages:
     path: pages
-    url: /[slug]/
+    url: /[slug]
     output: true
     parser: front-matter
 
   posts:
     path: posts
-    url: /posts/[slug]/
+    url: /posts/[slug]
     output: true
     parser: front-matter
     _enabled_editors: 
