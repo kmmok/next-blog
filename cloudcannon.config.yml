@@ -9,13 +9,13 @@ collections_config:
     path: pages
     url: /[slug]/
     output: true
-    parser: frontmatter
+    parser: front-matter
 
   posts:
     path: posts
     url: /posts/[slug]/
     output: true
-    parser: frontmatter
+    parser: front-matter
     _enabled_editors: 
       - visual
       - content
