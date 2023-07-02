@@ -5,7 +5,17 @@
 # Here you can define your collections, as well as any
 # CloudCannon configuration specific to those collections.
 collections_config: 
-  
+  pages:
+    path: pages
+    url: /[slug]/
+    output: true
+    parser: frontmatter
+  posts:
+    path: posts
+    url: /posts/[slug]/
+    output: true
+    parser: frontmatter
+
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
