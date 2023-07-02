@@ -13,7 +13,7 @@ collections_config:
 
   posts:
     path: posts
-    url: /posts/[slug]/
+    url: /posts/[slug]
     output: true
     parser: frontmatter
     _enabled_editors: 
