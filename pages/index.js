@@ -15,7 +15,9 @@ export default function Home({ allPostsData }) {
         <p>Drink bottles</p>
         
       </section>
-
+      <div>
+          <Link href="/about"> About</Link>
+      </div>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
