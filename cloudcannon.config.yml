@@ -10,11 +10,15 @@ collections_config:
     url: /[slug]/
     output: true
     parser: frontmatter
+
   posts:
     path: posts
     url: /posts/[slug]/
     output: true
     parser: frontmatter
+    _enabled_editors: 
+      - visual
+      - content
 
 
 # Control which collections are displayed in the CloudCannon site navigation,
