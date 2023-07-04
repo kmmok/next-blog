@@ -12,7 +12,7 @@ collections_config:
     parser: front-matter
 
   posts:
-    path: posts
+    path: content/posts
     url: /posts/[slug]
     output: true
     parser: front-matter
